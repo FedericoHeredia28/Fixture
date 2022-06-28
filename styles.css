@@ -6,7 +6,7 @@ body {
   margin: 5px;
   text-align: center;
   border: 4px solid rgb(206, 167, 107);
-  background-image:linear-gradient(rgb(250, 230, 190),rgb(250, 227, 167), rgb(206, 167, 107));
+  background-image:linear-gradient(rgb(250, 230, 190),rgb(250, 227, 166), rgb(206, 167, 107));
   font-family: monospace;
   font-size: 10px;
   padding-right: -11px;
