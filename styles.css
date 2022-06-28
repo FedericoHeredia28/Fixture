@@ -1,7 +1,85 @@
+body {
+  background-color: rgb(240, 210, 160)
+}
+
+.group-table {
+  margin: 5px;
+  text-align: center;
+  border: 2px solid black;
+  background-image:linear-gradient(rgb(250, 230, 190),rgb(118, 197, 255), rgb(0, 147, 255));
+  font-family: monospace;
+  font-size: 10px;
+  padding-right: -11px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 5px;
+  background-color: rgba(255, 218, 118, 0.4);
+}
+
+.group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .tita {
   text-align: center;
+  outline: 5px;
+  outline-color: rgb(206, 167, 107);
   font-family: fantasy;
-  border-bottom: 3px solid black
+  border-bottom: 3px solid black;
+}
+
+.matches {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+
+
+span {
+  text-align: center;
+  font-weight: bolder;
+  font-family: monospace;
+  font-size: 22px;
+}
+
+#Titulo-Field{
+  font-size: 16px;
+}
+
+
+#Borde-Bracket {
+  padding: 5px;
+}
+
+#Octavos {
+  padding: 5px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.brackets div {
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brackets div section {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h3 {
@@ -9,23 +87,9 @@ h3 {
   background-color: rgba(255, 218, 118, 0.2);
   font-family:Montserrat,monospace;
 }
-
-.group-table {
-  margin: 5px;
-  text-align: center;
-  border: 2px solid black;
-  background-image:linear-gradient(rgb(244, 244, 244),rgb(118, 197, 255), rgb(0, 147, 255));
-  font-family: monospace;
-  font-size: 10px;
-}
-
-.group {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
 label {
-  border: 3px dashed silver;
-  background-color: rgb(227, 227, 227);
+  border: 3px dashed rgb(206, 167, 107);
+  background-color: rgb(250, 227, 167);
   padding-left: 2px;
   padding-right: 2px;
   font-size: 16px;
@@ -34,7 +98,10 @@ label {
 }
 
 input {
-  background-color: rgb(227, 227, 227);
+  background-color: rgb(250, 227, 190);
+  font-family: monospace;
+  border-color: rgb(206, 167, 107);
+  margin: none;
 }
 
 h4{
@@ -43,30 +110,48 @@ h4{
   font-size: 18px;
 }
 
+fieldset {
+  display: flex;
+  flex-direction: row;
+
+  padding: 5px;
+  text-align: center;
+  border-width: thick;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  border-color: rgb(206, 167, 107);
+}
+
+legend {
+  text-align: center;
+  font-family: monospace;
+  font-weight:600;
+  font-size: 18px;
+}
+
 .division {
   height: 2px;
-  background-color: black;
+  background-color: rgb(206, 167, 107);
   border: none;
 }
 
 .a {
   height: 1px;
-  background-color: rgb(112, 112, 112);
+  background-color: rgb(206, 167, 107);
   border: none;
 }
 
 .ser{
   height: 2px;
-  background-color: silver;
+  margin: none;
+  background-color: rgb(206, 167, 107);
   border: none;
 }
 
-/* table {
-  border: 2px dashed black;
-} */
 
-th, td {
-  border: 1px solid black;
-  padding: 5px;
-  background-color: rgba(255, 218, 118, 0.4);
+#vs {
+  margin: none;
+  border: none;
 }
