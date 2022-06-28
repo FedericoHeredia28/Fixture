@@ -1,21 +1,21 @@
 body {
-  background-color: rgb(240, 210, 160)
+  background-color: rgb(240, 210, 160);
 }
 
 .group-table {
   margin: 5px;
   text-align: center;
-  border: 2px solid black;
-  background-image:linear-gradient(rgb(250, 230, 190),rgb(118, 197, 255), rgb(0, 147, 255));
+  border: 4px solid rgb(206, 167, 107);
+  background-image:linear-gradient(rgb(250, 230, 190),rgb(250, 227, 167), rgb(206, 167, 107));
   font-family: monospace;
   font-size: 10px;
   padding-right: -11px;
 }
 
 th, td {
-  border: 1px solid black;
+  border: 1px solid rgb(206, 167, 107);
   padding: 5px;
-  background-color: rgba(255, 218, 118, 0.4);
+  background-color: rgba(245, 220, 163, 0.4);
 }
 
 .group {
@@ -83,7 +83,7 @@ span {
 }
 
 h3 {
-  border: 1px solid black;
+  border: 1px solid rgb(206, 167, 107);
   background-color: rgba(255, 218, 118, 0.2);
   font-family:Montserrat,monospace;
 }
@@ -113,7 +113,6 @@ h4{
 fieldset {
   display: flex;
   flex-direction: row;
-
   padding: 5px;
   text-align: center;
   border-width: thick;
@@ -154,4 +153,5 @@ legend {
 #vs {
   margin: none;
   border: none;
+  background-color: rgb(240, 210, 160);
 }

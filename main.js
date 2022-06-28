@@ -4,7 +4,7 @@ function handleSubmit(event) {
  let visitante = event.target.children[3].textContent;
  let golesLocal = event.target.children[1].value;
  let golesVisitante = event.target.children[2].value;
-
+ let 1erPuestoA = 0;
  let ganoLocal = false;
  let empate = false;
  if (golesLocal > golesVisitante) ganoLocal = true;
@@ -37,11 +37,11 @@ function handleSubmit(event) {
      // GC del visitante
      td.parentElement.children[8].textContent = parseInt(td.parentElement.children[8].textContent) + parseInt(golesLocal);
      if (golesLocal > golesVisitante) {
-        td.nextElementSibling.nextElementSibling.nextElementSibling.textContent = parseInt(td.nextElementSibling.nextElementSibling.nextElementSibling.textContent) + 1;
-        td.nextElementSibling.textContent = (parseInt(td.parentElement.children[4].textContent) * 3) + parseInt(td.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.textContent);
+        td.parentElement.children[6].textContent = parseInt(td.parentElement.children[6].textContent) + 1;
+        td.parentElement.children[2].textContent = (parseInt(td.parentElement.children[4].textContent) * 3) + parseInt(td.parentElement.children[3].textContent);
       }
       if (golesLocal < golesVisitante) {
-        td.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.textContent = parseInt(td.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.textContent) + 1;
+        td.parentElement.children[4].textContent = parseInt(td.parentElement.children[4].textContent) + 1;
       }
      if (ganoVisitante) {
        parseInt(d.parentElement.children[4].textContent) + 1;
@@ -55,9 +55,9 @@ function handleSubmit(event) {
      if (ganoVisitante) {
        parseInt(d.parentElement.children[4].textContent) + 1;
      }
-  td.parentElement.children[9].textContent = parseInt(td.parentElement.children[7].textContent) - parseInt(td.parentElement.children[8].textContent);
    }
    }
+   td.parentElement.children[9].textContent = parseInt(td.parentElement.children[7].textContent) - parseInt(td.parentElement.children[8].textContent);
  }
 
 }
