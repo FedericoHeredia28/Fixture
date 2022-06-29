@@ -4,7 +4,7 @@ function handleSubmit(event) {
  let visitante = event.target.children[3].textContent;
  let golesLocal = event.target.children[1].value;
  let golesVisitante = event.target.children[2].value;
- let 1erPuestoA = 0;
+ let primerA = 0;
  let ganoLocal = false;
  let empate = false;
  if (golesLocal > golesVisitante) ganoLocal = true;
