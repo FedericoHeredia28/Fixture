@@ -22,7 +22,7 @@ function handleSubmit(event) {
         // td.nextElementSibling.textContent = parseInt(td.nextElementSibling.textContent) + 1;
        td.parentElement.children[5].textContent = parseInt(td.parentElement.children[5].textContent) + 1;
        td.parentElement.children[2].textContent = parseInt(td.parentElement.children[2].textContent) + 1;
-
+// 
      }
      // PJ + 1/
      td.parentElement.children[3].textContent = parseInt(td.parentElement.children[3].textContent) + 1;
