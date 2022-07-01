@@ -4,7 +4,7 @@ function handleSubmit(event) {
  let visitante = event.target.children[3].textContent;
  let golesLocal = event.target.children[1].value;
  let golesVisitante = event.target.children[2].value;
- let 1erPuestoA = 0;
+ let grupoa = 0;
  let ganoLocal = false;
  let empate = false;
  if (golesLocal > golesVisitante) ganoLocal = true;
@@ -21,15 +21,24 @@ function handleSubmit(event) {
        // td.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.textContent = parseInt(td.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.textContent) + 1;
         // td.nextElementSibling.textContent = parseInt(td.nextElementSibling.textContent) + 1;
        td.parentElement.children[5].textContent = parseInt(td.parentElement.children[5].textContent) + 1;
+       td.parentElement.children[2].textContent = parseInt(td.parentElement.children[2].textContent) + 1;
+
      }
      // PJ + 1
      td.parentElement.children[3].textContent = parseInt(td.parentElement.children[3].textContent) + 1;
    }
    if (td.textContent == local) {
+     if (golesLocal > golesVisitante) {
+        td.parentElement.children[2].textContent = parseInt(td.parentElement.children[2].textContent) + 3;
+      }
      // GF del local
      td.parentElement.children[7].textContent = parseInt(td.parentElement.children[7].textContent) + parseInt(golesLocal);
      // GC del local
      td.parentElement.children[8].textContent = parseInt(td.parentElement.children[8].textContent) + parseInt(golesVisitante);
+
+     if (golesLocal < golesVisitante) {
+       td.parentElement.children[6].textContent = parseInt(td.parentElement.children[6].textContent) + 1;
+     }
    }
    if (td.textContent == visitante) {
      // GF del visitante
@@ -42,6 +51,7 @@ function handleSubmit(event) {
       }
       if (golesLocal < golesVisitante) {
         td.parentElement.children[4].textContent = parseInt(td.parentElement.children[4].textContent) + 1;
+        td.parentElement.children[2].textContent = parseInt(td.parentElement.children[2].textContent) + 3;
       }
      if (ganoVisitante) {
        parseInt(d.parentElement.children[4].textContent) + 1;
