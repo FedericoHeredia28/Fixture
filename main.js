@@ -4,11 +4,7 @@ function handleSubmit(event) {
  let visitante = event.target.children[3].textContent;
  let golesLocal = event.target.children[1].value;
  let golesVisitante = event.target.children[2].value;
-<<<<<<< HEAD
  let grupoa = 0;
-=======
- let primerA = 0;
->>>>>>> b3cb1c2e4afd03b2d641aac5bcbdd5516bdf5d3b
  let ganoLocal = false;
  let empate = false;
  if (golesLocal > golesVisitante) ganoLocal = true;
@@ -26,7 +22,7 @@ function handleSubmit(event) {
         // td.nextElementSibling.textContent = parseInt(td.nextElementSibling.textContent) + 1;
        td.parentElement.children[5].textContent = parseInt(td.parentElement.children[5].textContent) + 1;
        td.parentElement.children[2].textContent = parseInt(td.parentElement.children[2].textContent) + 1;
-// 
+//
      }
      // PJ + 1/
      td.parentElement.children[3].textContent = parseInt(td.parentElement.children[3].textContent) + 1;

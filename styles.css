@@ -66,7 +66,6 @@ span {
     justify-content: center;
 }
 
-<<<<<<< HEAD
   .container {
     display: flex;
     flex-direction: row;
@@ -81,8 +80,6 @@ span {
     justify-content: center;
 }
 
-=======
->>>>>>> b3cb1c2e4afd03b2d641aac5bcbdd5516bdf5d3b
 
 .container div section {
     display: flex;
@@ -94,10 +91,6 @@ span {
     padding-top: 1rem;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> b3cb1c2e4afd03b2d641aac5bcbdd5516bdf5d3b
 h3 {
   border: 1px solid rgb(206, 167, 107);
   background-color: rgba(255, 218, 118, 0.2);
