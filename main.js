@@ -24,7 +24,7 @@ function handleSubmit(event) {
        td.parentElement.children[2].textContent = parseInt(td.parentElement.children[2].textContent) + 1;
 
      }
-     // PJ + 1
+     // PJ + 1/
      td.parentElement.children[3].textContent = parseInt(td.parentElement.children[3].textContent) + 1;
    }
    if (td.textContent == local) {
